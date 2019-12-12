@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibOxfJpModKit", "LibOxfJpModKit\LibOxfJpModKit.csproj", "{6E20B046-28F8-446B-9E45-8C32225B4A89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxfSheetMaker", "OxfSheetMaker\OxfSheetMaker.csproj", "{AD8F1897-A69A-493B-BD02-C0274C540ED1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxfJpModMaker", "OxfJpModMaker\OxfJpModMaker.csproj", "{BD077F2A-019F-44B5-B8B6-EB33F9C6D511}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E20B046-28F8-446B-9E45-8C32225B4A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E20B046-28F8-446B-9E45-8C32225B4A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E20B046-28F8-446B-9E45-8C32225B4A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E20B046-28F8-446B-9E45-8C32225B4A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8F1897-A69A-493B-BD02-C0274C540ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8F1897-A69A-493B-BD02-C0274C540ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8F1897-A69A-493B-BD02-C0274C540ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8F1897-A69A-493B-BD02-C0274C540ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD077F2A-019F-44B5-B8B6-EB33F9C6D511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD077F2A-019F-44B5-B8B6-EB33F9C6D511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD077F2A-019F-44B5-B8B6-EB33F9C6D511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD077F2A-019F-44B5-B8B6-EB33F9C6D511}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C01DF517-4A53-4118-A4EE-242818D29D2E}
+	EndGlobalSection
+EndGlobal
