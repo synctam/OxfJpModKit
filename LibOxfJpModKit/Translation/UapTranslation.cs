@@ -42,11 +42,18 @@
                         transSheetDialogInfo.GetEntry(
                             langDialogFileEN.FileID, langEntryJP.LineID);
                     //// Dialogエントリーを翻訳する。
-                    langEntryJP.LanguageEntries[langNo].Text = GetTranslatedText(
-                        langEntryJP.LanguageEntries[langNo].Text,
-                        sheetEntry.Japanese,
-                        sheetEntry.MTrans,
-                        useMT);
+                    if (langEntryJP.LanguageEntries.ContainsKey(langNo))
+                    {
+                        langEntryJP.LanguageEntries[langNo].Text = GetTranslatedText(
+                            langEntryJP.LanguageEntries[langNo].Text,
+                            sheetEntry.Japanese,
+                            sheetEntry.MTrans,
+                            useMT);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Warning: LangNo not found. LangNo({langNo}) LineID({langEntryJP.LineID}) FileID({langDialogFileJP.FileID})");
+                    }
                 }
             }
 
@@ -84,11 +91,18 @@
                         transSheetLocalizationInfo.GetEntry(
                             localizationFileEN.FileID, localizationEntryJP.ID);
                     //// 言語エントリーを翻訳
-                    localizationEntryJP.LanguageEntries[langNo] = GetTranslatedText(
-                        localizationEntryJP.LanguageEntries[langNo],
-                        sheetEntry.Japanese,
-                        sheetEntry.MTrans,
-                        useMT);
+                    if (localizationEntryJP.LanguageEntries.ContainsKey(langNo))
+                    {
+                        localizationEntryJP.LanguageEntries[langNo] = GetTranslatedText(
+                            localizationEntryJP.LanguageEntries[langNo],
+                            sheetEntry.Japanese,
+                            sheetEntry.MTrans,
+                            useMT);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Warning: LangNo not found. LangNo({langNo}) ID({localizationEntryJP.ID}) FileID({localizationFileJP.FileID})");
+                    }
                 }
             }
 

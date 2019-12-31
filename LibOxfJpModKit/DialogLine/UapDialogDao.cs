@@ -87,7 +87,8 @@
         /// </summary>
         /// <param name="dialogFile">Dialogファイル</param>
         /// <param name="br">Stream</param>
-        private static void ReadEntries(UapDialogFile dialogFile, BinaryReader br)
+        private static void ReadEntries(
+            UapDialogFile dialogFile, BinaryReader br)
         {
             var entries = br.ReadInt32();
             for (int i = 0; i < entries; i++)
